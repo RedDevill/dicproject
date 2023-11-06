@@ -1,27 +1,22 @@
 <!DOCTYPE html>
-
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="UTF-8">
-    <title> DIC Speech</title>
-    <link rel="stylesheet" href="navbarstyle.css">
-    <link rel="stylesheet" href="pop-up.css">
-    <link rel="stylesheet" href="other.css">
-    <!-- https://fontawesome.com/kits -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-    <!-- <script src="https://kit.fontawesome.com/4c18a2dcc7.js" crossorigin="anonymous"></script> -->
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.7.1/jszip.min.js"></script>
-
-
-	  
+<head>
+  <meta charset="UTF-8">
+  <title> DIC Speech</title>
+  <link rel="stylesheet" href="navbarstyle.css">
+  <link rel="stylesheet" href="pop-up.css">
+  <link rel="stylesheet" href="other.css">
+  <!-- https://fontawesome.com/kits -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <!-- <script src="https://kit.fontawesome.com/4c18a2dcc7.js" crossorigin="anonymous"></script> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.7.1/jszip.min.js">
+  </script>
 </head>
 
-
-	
 <body>
-  
+
   <!-- Pop-up container -->
   <div class="popup-container">
     <!-- Pop-up content -->
@@ -34,80 +29,46 @@
             <li data-tc="tab_item_1" class="active">About Project</li>
             <li data-tc="tab_item_2">How to Use</li>
             <li data-tc="tab_item_3">Terms of Use</li>
-            <!-- <li data-tc="tab_item_4">Confidentiality and Data Privacy</li>
-            <li data-tc="tab_item_6">Governing Law and Jurisdiction</li> -->
             <li data-tc="tab_item_5">Rights and Permissions</li>
-            
-            <!-- <li data-tc="tab_item_7">Rights and Permissions</li> -->
           </ul>
         </div>
         <div class="tabs_content">
-           <div class="tab_head">
-             <h2>Important Instructions</h2>
-           </div>
-           <div class="tab_body">
-             <div class="tab_item tab_item_1">
-                 <h3>About Project</h3>
-                 <p>A speech/audio dataset plays a vital role in the development and implementation of machine learning (ML) models for speech-related tasks. It serves as the foundation upon which these models are trained, evaluated, and fine-tuned.</p>
-                 <p>The project is developed  with the primary objective of collecting speech datasets. This application incorporates essential features like user authentication, implemented through Firebase, to ensure secure access to the system.
-                     The project is a web application that addresses a crucial need in the ML community. It empowers researchers and developers to gather a large-scale, diverse, and high-quality dataset, enhancing the accuracy and performance of ML models in speech-related tasks. The availability of such a dataset facilitates advancements in speech technology, leading to improved speech recognition systems, natural language understanding, and a wide range of voice-driven applications.</p>
-                 <p>By creating this web application, the project aims to facilitate the collection of speech data, which is an essential component in the development of machine learning models and speech-related applications. The recorded audio snippets will contribute to the creation of a diverse and comprehensive dataset, enabling researchers and developers to train and fine-tune their models with real-world speech samples.</p>
-                 </div>
-             <div class="tab_item tab_item_2" style="display: none;">
-                 <h3>How to Use</h3>
-                 <ul>
-                     <li><p>Select the language in which you want to record sentences.</p></li>
-                     <li><p>Press <strong>Record</strong> to start.</p></li>
-                     <li><p>Once you press <strong>Record</strong> button, you will be shown several sentences in the selected language one by one.</p></li>
-                     <li><p>Record yourself saying only the sentence shown on the screen.</p></li>
-                     <li><p>A sentence will be visible for 5 seconds on your screen before switching to another sentence. Record the sentence within that time.</p></li>
-                     <li><p>Press <strong>Stop</strong> to stop recording. In this case, your progress will be saved, and once you press the <strong>Record</strong> button again, you will be able to continue from where you left off.</p></li>
-                     <li><p>Once all the requested sentences are completed, you can download the recordings in a zip file by pressing the download button.</p></li>
-                   </ul>  
-             </div>
-             <div class="tab_item tab_item_3"  style="display: none;">
-                 <h3>Terms of Use</h3>
-                 <p><strong>Purpose of the Project: </strong>The Project aims to collect speech data from participants to support research conducted by Design and Innovation Centre(DIC), UIET, Panjab University. The data collected will be used for research purposes, including but not limited to the development of speech recognition technology, language analysis, and related studies.</p>
-               <p><strong>Voluntary Participation:</strong>Participation in the Project is voluntary. By agreeing to participate, you acknowledge that you have read and understood the terms of this Agreement and consent to the collection, use, and storage of your speech data for the purposes outlined under Purpose of the Project.</p>
-                </div>
-             <!-- <div class="tab_item tab_item_4"  style="display: none;">
-                 <h3>Confidentiality and Data Privacy</h3>
-               <p><strong> Confidentiality:</strong>The Organization acknowledges the confidential nature of the data collected and agrees to treat the data as confidential. The data will be stored securely and accessed only by authorized personnel involved in the Project.</p>
-               <p><strong>Data Privacy: </strong>The Organization will handle your personal information and speech data in accordance with applicable data protection laws. Your personal information and speech data will not be shared with any third parties without your explicit consent, except as required by law.</p>
-             </div>
-
-             <div class="tab_item tab_item_6">
-              <h3>Governing Law and Jurisdiction</h3>
-              <p>This Agreement shall be governed by and construed in accordance with the laws of Chandigarh . Any disputes arising under or in connection with this Agreement shall be subject to the exclusive jurisdiction of the courts of Chandigarh.</p>
-           </div> -->
-
-             <div class="tab_item tab_item_5"  style="display: none;">
-                 <h3>Rights and Permissions</h3>
-               <p><strong>Use of Data: </strong>By participating in the Project, you grant the Organization a non-exclusive, worldwide, royalty-free license to use, reproduce, modify, and distribute the collected data for research purposes. This includes the right to create derivative works, perform analysis, and publish findings based on the data, provided that any published work will not identify you personally without your consent.</p>
-               <p><strong>Attribution: </strong>The Organization may, at its discretion, acknowledge your contribution to the Project in any publications or reports resulting from the research, without disclosing your personal information unless you have given explicit consent.</p>
-               
-             </div>
-
- 
-             <!-- <div class="tab_item tab_item_7">
-                 <h3>About Project</h3>
-                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At fugit praesentium reiciendis aut debitis minima earum fugiat quam aspernatur qui. Labore, aliquam iste. A quasi ut accusantium laboriosam eius sequi?</p>
-               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At fugit praesentium reiciendis aut debitis minima earum fugiat quam aspernatur qui. Labore, aliquam iste. A quasi ut accusantium laboriosam eius sequi?</p>
-               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At fugit praesentium reiciendis aut debitis minima earum fugiat quam aspernatur qui. Labore, aliquam iste. A quasi ut accusantium laboriosam eius sequi?</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At fugit praesentium reiciendis aut debitis minima earum fugiat quam aspernatur qui. Labore, aliquam iste. A quasi ut accusantium laboriosam eius sequi?</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At fugit praesentium reiciendis aut debitis minima earum fugiat quam aspernatur qui. Labore, aliquam iste. A quasi ut accusantium laboriosam eius sequi?</p>
-             </div> -->
-           </div>
-           <!-- <div class="tab_foot flex_align_justify">
-             <button class="decline">
-               Decline
-             </button>
-             <button class="agree">
-               Agree
-             </button>
-           </div> -->
-           <button class="ok-button" style="margin-bottom: 15px;">OK</button>
+          <div class="tab_head">
+            <h2>Important Instructions</h2>
+          </div>
+          <div class="tab_body">
+            <div class="tab_item tab_item_1">
+              <h3>About Project</h3>
+              <p>A speech/audio dataset plays a vital role in the development and implementation of machine learning (ML) models for speech-related tasks. It serves as the foundation upon which these models are trained, evaluated, and fine-tuned.</p>
+              <p>The project is developed with the primary objective of collecting speech datasets. This application incorporates essential features like user authentication, implemented through Firebase, to ensure secure access to the system. The project is a web application that addresses a crucial need in the ML community. It empowers researchers and developers to gather a large-scale, diverse, and high-quality dataset, enhancing the accuracy and performance of ML models in speech-related tasks. The availability of such a dataset facilitates advancements in speech technology, leading to improved speech recognition systems, natural language understanding, and a wide range of voice-driven applications.</p>
+              <p>By creating this web application, the project aims to facilitate the collection of speech data, which is an essential component in the development of machine learning models and speech-related applications. The recorded audio snippets will contribute to the creation of a diverse and comprehensive dataset, enabling researchers and developers to train and fine-tune their models with real-world speech samples.</p>
+            </div>
+            <div class="tab_item tab_item_2" style="display: none;">
+              <h3>How to Use</h3>
+              <ul>
+                <li><p>Select the language in which you want to record sentences.</p></li>
+                <li><p>Press <strong>Record</strong> to start.</p></li>
+                <li><p>Once you press <strong>Record</strong> button, you will be shown several sentences in the selected language one by one.</p></li>
+                <li><p>Record yourself saying only the sentence shown on the screen.</p></li>
+                <li><p>A sentence will be visible for 5 seconds on your screen before switching to another sentence. Record the sentence within that time.</p></li>
+                <li><p>Press <strong>Stop</strong> to stop recording. In this case, your progress will be saved, and once you press the <strong>Record</strong> button again, you will be able to continue from where you left off.</p></li>
+                <li><p>Once all the requested sentences are completed, you can download the recordings in a zip file by pressing the download button.</p></li>
+              </ul>
+            </div>
+            <div class="tab_item tab_item_3" style="display: none;">
+              <h3>Terms of Use</h3>
+              <p><strong>Purpose of the Project:</strong> The Project aims to collect speech data from participants to support research conducted by Design and Innovation Centre (DIC), UIET, Panjab University. The data collected will be used for research purposes, including but not limited to the development of speech recognition technology, language analysis, and related studies.</p>
+              <p><strong>Voluntary Participation:</strong> Participation in the Project is voluntary. By agreeing to participate, you acknowledge that you have read and understood the terms of this Agreement and consent to the collection, use, and storage of your speech data for the purposes outlined under Purpose of the Project.</p>
+            </div>
+            <div class="tab_item tab_item_5" style="display: none;">
+              <h3>Rights and Permissions</h3>
+              <p><strong>Use of Data:</strong> By participating in the Project, you grant the Organization a non-exclusive, worldwide, royalty-free license to use, reproduce, modify, and distribute the collected data for research purposes. This includes the right to create derivative works, perform analysis, and publish findings based on the data, provided that any published work will not identify you personally without your consent.</p>
+              <p><strong>Attribution:</strong> The Organization may, at its discretion, acknowledge your contribution to the Project in any publications or reports resulting from the research, without disclosing your personal information unless you have given explicit consent.</p>
+            </div>
+          </div>
+          <button class="ok-button" style="margin-bottom: 15px;">OK</button>
         </div>
-    </div>
-
+      </div>
     </div>
   </div>
 
@@ -119,38 +80,22 @@
     <ul class="nav-links">
       <li>
         <a href="index.html">
-            <i class="fa-solid fa-house-chimney" style="color: #ffffff;"></i>
+          <i class="fa-solid fa-house-chimney" style="color: #ffffff;"></i>
           <span class="link_name">Home</span>
         </a>
         <ul class="sub-menu blank">
           <li><a class="link_name" href="#">Home</a></li>
         </ul>
       </li>
-	<li>
+      <li>
         <a href="record.html" target=”_blank”>
           <i class="fa-solid fa-language" style="color: #ffffff;"></i>
-          <span class="link_name">Record</span>
+          <span class "link_name">Record</span>
         </a>
         <ul class="sub-menu blank">
           <li><a class="link_name" href="#">Record</a></li>
         </ul>
       </li>
-      <!-- <li>
-        <div class="iocn-link">
-          <a href="#">
-            <i class="fa-solid fa-language" style="color: #ffffff;"></i>
-            <span class="link_name">Language</span>
-          </a>
-          <i id="arrow" class="fa-solid fa-caret-down" style="color: #ffffff;"></i>
-        </div>
-        <ul class="sub-menu">
-          <li><a class="link_name" href="#">Language</a></li>
-          <li><a href="#">English</a></li>
-          <li><a href="#">हिंदी</a></li>
-          <li><a href="#">ਪੰਜਾਬੀ</a></li>
-        </ul>
-      </li> -->
-
       <li>
         <a href="https://forms.gle/RxCCYFqmx1663HMu9" target=”_blank”>
           <i class="fa-solid fa-upload" style="color: #fcfcfd;"></i>
@@ -160,22 +105,6 @@
           <li><a class="link_name" href="#">Submit Recordings</a></li>
         </ul>
       </li>
-
-      <!-- <li>
-        <div class="iocn-link">
-          <a href="#">
-            <i class='bx bx-book-alt' ></i>
-            <span class="link_name">Posts</span>
-          </a>
-          <i class='bx bxs-chevron-down arrow' ></i>
-        </div>
-        <ul class="sub-menu">
-          <li><a class="link_name" href="#">Posts</a></li>
-          <li><a href="#">Web Design</a></li>
-          <li><a href="#">Login Form</a></li>
-          <li><a href="#">Card Design</a></li>
-        </ul>
-      </li> -->
       <li>
         <a href="aboutus.html" target=”_blank”>
           <i class="fa-solid fa-address-card" style="color: #ffffff;"></i>
@@ -187,73 +116,33 @@
       </li>
       <li>
         <a href="instructions.html" target=”_blank”>
-         <i class="fa-solid fa-file-contract" style="color: #ffffff;"></i>
+          <i class="fa-solid fa-file-contract" style="color: #ffffff;"></i>
           <span class="link_name">Terms and Conditions</span>
         </a>
         <ul class="sub-menu blank">
           <li><a class="link_name" href="#">Terms and Conditions</a></li>
         </ul>
       </li>
-      <!-- <li>
-        <div class="iocn-link">
-          <a href="#">
-            <i class='bx bx-plug' ></i>
-            <span class="link_name">Plugins</span>
-          </a>
-          <i class='bx bxs-chevron-down arrow' ></i>
+      <li>
+        <div class="profile-details">
+          <div class="profile-content">
+            <img src="" alt="profileImg">
+          </div>
+          <div class="name-job">
+            <div class="profile_name"></div>
+          </div>
+          <i class="fa-solid fa-right-from-bracket" id="logout" style="color: #ffffff;"></i>
         </div>
-        <ul class="sub-menu">
-          <li><a class="link_name" href="#">Plugins</a></li>
-          <li><a href="#">UI Face</a></li>
-          <li><a href="#">Pigments</a></li>
-          <li><a href="#">Box Icons</a></li>
-        </ul>
-      </li> -->
-
-      <!-- <li>
-        <a href="#">
-          <i class='bx bx-history'></i>
-          <span class="link_name">History</span>
-        </a>
-        <ul class="sub-menu blank">
-          <li><a class="link_name" href="#">History</a></li>
-        </ul>
       </li>
-      <li>
-        <a href="#">
-          <i class='bx bx-cog' ></i>
-          <span class="link_name">Setting</span>
-        </a>
-        <ul class="sub-menu blank">
-          <li><a class="link_name" href="#">Setting</a></li>
-        </ul>
-      </li> -->
-      
-      <li>
-    <div class="profile-details">
-      <!-- <span id="user-details"></span> -->
-      <div class="profile-content">
-        <img src="" alt="profileImg">
-      </div>
-      <div class="name-job">
-        <div id="user-details" class="profile_name" ></div>
-        
-      </div>
-      <i class="fa-solid fa-right-from-bracket" id="logout" style="color: #ffffff;"></i>
-    </div>
-  </li>
-</ul>
+    </ul>
   </div>
   <section class="home-section">
-
-    <!-- Home content division on top -->
     <div class="home-content">
       <button id="navMenu" class="toggle-button" aria-label="Toggle Sidebar">
         <i class="fa-solid fa-bars fa-2x"></i>
       </button>
       <span class="text"></span>
     </div>
-   
     <div class="wrapper">
       <div class="login-popup">
         <div class="popup-content-auth">
@@ -261,37 +150,42 @@
           <button class="cancel-button">Cancel</button>
           <button class="signin-button">Sign In</button>
         </div>
-        
       </div>
-    <div>
-    <h1 class="h-center">Speech Recorder</h1>
-    <section class="top-display">
-    <p class="p-center">Language:</p>
-    <div class="directions"><select class="dropdown-menu" id="languageSelect">
-        <option value="english">Choose Language</option>
-        <option value="english">English</option>
-        <option value="hindi">Hindi</option>
-        <option value="punjabi">Punjabi</option>
-        <option value="english">Other</option>
-      </select></div></br>
-     <div class="directions"> 
-    <div class="d-text" id="textDisplay">
-        <p>The text to be recorded will be displayed here. First, choose a language.</p>
-       </div></div>  
-    </div><br> 
-  <div class="directions">
-  <canvas id="visualizer" width="200" height="50"></canvas></div>
-  
-  <br>
-    <button id="startRecording">Start Recording</button>
-    <button id="stopRecording" disabled>Stop Recording</button>
-    <button id="resetRecording">Reset</button>
-    <button id="downloadAll">Download All</button>
-    </section>
-    <div id="audioList" class="p-center">
-      <p class="p-center"> Recorded audio files will be listed here  </p><br>
+      <div>
+        <h1 class="h-center">Speech Recorder</h1>
+        <section class="top-display">
+          <p class="p-center">Language:</p>
+          <div class="directions">
+            <select class="dropdown-menu" id="languageSelect">
+              <option value="english">Choose Language</option>
+              <option value="english">English</option>
+              <option value="hindi">Hindi</option>
+              <option value="punjabi">Punjabi</option>
+              <option value="english">Other</option>
+            </select>
+          </div>
+          </br>
+          <div class="directions">
+            <div class="d-text" id="textDisplay">
+              <p>The text to be recorded will be displayed here. First, choose a language.</p>
+            </div>
+          </div>
+        </section>
+        <div class="directions">
+          <canvas id="visualizer" width="200" height="50"></canvas>
+        </div>
+        <br>
+        <button id="startRecording">Start Recording</button>
+        <button id="stopRecording" disabled>Stop Recording</button>
+        <button id="resetRecording">Reset</button>
+        <button id="downloadAll">Download All</button>
+      </div>
+      <div id="audioList" class="p-center">
+        <p class="p-center">Recorded audio files will be listed here</p><br>
+      </div>
     </div>
-   </div>
+  </section>
+
      
       <!-- JavaScript code for closing the pop-up -->
   <!-- <script>
