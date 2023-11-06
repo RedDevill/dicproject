@@ -1,57 +1,5 @@
- <style>
+
     /* Reset some default styles for consistency across browsers */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Set a background color for the entire page */
-body {
-  background-color: #f5f5f5;
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  margin: 0;
-  padding: 0;
-}
-
-/* Improve readability and style for the header */
-head {
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  padding: 20px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-}
-
-title {
-  font-size: 36px;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-/* Style the main content area */
-body {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
-  font-family: "Roboto Mono", monospace;
-  font-size: 0.8rem;
-  overflow-y: scroll;
-}
-
-.main-page {
-          height: 100vh; /* Set the main page height to occupy the full viewport height */
-        }
-
-        .sound-clips-page {
-          height: 100vh; /* Set the sound clips page height to occupy the full viewport height */
-        }
-
-
 
 h1 {
   font-size: 28px;
@@ -235,5 +183,3 @@ li button {
 li button:hover {
   background-color: #D6263E;
 }
-   
- </style>
